@@ -1,0 +1,95 @@
+﻿<Window x:Class="InventoryManagementSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Inventory Management System Dashboard" Height="600" Width="1000">
+    <Grid Background="DarkBlue">
+        <!-- Title at the top -->
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" 
+                   FontSize="36" Foreground="White" FontWeight="Bold" 
+                   Margin="10,10,10,0" Text="Inventory Management System Dashboard"/>
+
+        <!-- Product Management Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,80,0,0" Padding="20" Width="200">
+            <TextBlock Text="Product Management" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Inventory Tracking Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,80,0,0" Padding="20" Width="200">
+            <TextBlock Text="Inventory Tracking" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Purchase Order Management Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,80,0,0" Padding="20" Width="200">
+            <TextBlock Text="Purchase Order Management" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Sales Order Management Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="750,80,0,0" Padding="20" Width="200">
+            <TextBlock Text="Sales Order Management" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Stock Movement Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,200,0,0" Padding="20" Width="200">
+            <TextBlock Text="Stock Movement" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Supplier Management Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,200,0,0" Padding="20" Width="200">
+            <TextBlock Text="Supplier Management" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Reports and Analytics Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,200,0,0" Padding="20" Width="200">
+            <TextBlock Text="Reports and Analytics" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Reorder Alerts Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="750,200,0,0" Padding="20" Width="200">
+            <TextBlock Text="Reorder Alerts" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- User Management Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,320,0,0" Padding="20" Width="200">
+            <TextBlock Text="User Management" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Audit Logs Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,320,0,0" Padding="20" Width="200">
+            <TextBlock Text="Audit Logs" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Barcode Scanning UI Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,320,0,0" Padding="20" Width="200">
+            <TextBlock Text="Barcode Scanning UI" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Notifications Center Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="750,320,0,0" Padding="20" Width="200">
+            <TextBlock Text="Notifications Center" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Backup and Restore UI Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,440,0,0" Padding="20" Width="200">
+            <TextBlock Text="Backup and Restore UI" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+
+        <!-- Login and Authentication Box -->
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,440,0,0" Padding="20" Width="200">
+            <TextBlock Text="Login and Authentication" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="StockMovement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Stock Movement" Height="450" Width="800">
+    <Grid Margin="10">
+        <!-- ComboBox for Movement Type -->
+        <Label Content="Movement Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <ComboBox x:Name="MovementTypeComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="120,10,0,0">
+            <ComboBoxItem Content="IN"/>
+            <ComboBoxItem Content="OUT"/>
+            <ComboBoxItem Content="ADJUSTMENT"/>
+        </ComboBox>
+
+        <!-- TextBox for Quantity -->
+        <Label Content="Quantity:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+        <TextBox x:Name="QuantityTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="120,50,0,0"/>
+
+        <!-- TextBox for Remarks -->
+        <Label Content="Remarks:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0"/>
+        <TextBox x:Name="RemarksTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Margin="120,90,0,0" Height="50"/>
+
+        <!-- Record Button -->
+        <Button Content="Record" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="120,160,0,0" Click="RecordButton_Click"/>
+
+        <!-- DataGrid for Movement History -->
+        <Label Content="Movement History:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,220,0,0"/>
+        <DataGrid x:Name="MovementHistoryDataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,250,10,0" AutoGenerateColumns="True" Height="150"/>
+    </Grid>
+</Window>
