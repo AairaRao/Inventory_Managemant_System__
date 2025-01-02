@@ -1,0 +1,63 @@
+﻿<Window x:Class="WpfApp1.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window6" Height="450" Width="800">
+    <Grid>
+        <!-- TabControl for different sections -->
+        <TabControl>
+
+            <!-- User Roles & Permissions Tab -->
+            <TabItem Header="User Roles">
+                <StackPanel Margin="15">
+                    <TextBlock Text="Role Name:" Margin="5" FontSize="16" FontWeight="Bold" Foreground="DarkBlue"/>
+                    <TextBox Name="txtRoleName" Width="300" Height="35" Margin="0,10" Background="LightGray"/>
+
+                    <TextBlock Text="Permissions:" Margin="10" FontSize="16" FontWeight="Bold" Foreground="DarkBlue"/>
+                    <ComboBox Name="cmbPermissions" Width="300" Height="35" Margin="0,10" Background="LightGray">
+                        <ComboBoxItem>View</ComboBoxItem>
+                        <ComboBoxItem>Edit</ComboBoxItem>
+                        <ComboBoxItem>Delete</ComboBoxItem>
+                    </ComboBox>
+
+                    <Button Content="Add Role" Width="300" Height="40" Margin="10" Background="#4CAF50" Foreground="White" FontWeight="Bold"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Reorder Thresholds Tab -->
+            <TabItem Header="Reorder Thresholds">
+                <StackPanel Margin="15">
+                    <TextBlock Text="Product:" Margin="5" FontSize="16" FontWeight="Bold" Foreground="DarkBlue"/>
+                    <ComboBox Name="cmbProducts" Width="300" Height="35" Margin="0,10" Background="LightGray">
+                        <ComboBoxItem>Product A</ComboBoxItem>
+                        <ComboBoxItem>Product B</ComboBoxItem>
+                        <ComboBoxItem>Product C</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock Text="Reorder Threshold:" Margin="10" FontSize="16" FontWeight="Bold" Foreground="DarkBlue"/>
+                    <TextBox Name="txtThreshold" Width="300" Height="35" Margin="0,10" Background="LightGray"/>
+
+                    <Button Content="Save Threshold" Width="300" Height="40" Margin="10" Background="#4CAF50" Foreground="White" FontWeight="Bold"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- External System Integration Tab -->
+            <TabItem Header="External System">
+                <StackPanel Margin="15">
+                    <TextBlock Text="API Endpoint:" Margin="5" FontSize="16" FontWeight="Bold" Foreground="DarkBlue"/>
+                    <TextBox Name="txtApiEndpoint" Width="300" Height="35" Margin="0,10" Background="LightGray"/>
+
+                    <TextBlock Text="API Key:" Margin="10" FontSize="16" FontWeight="Bold" Foreground="DarkBlue"/>
+                    <TextBox Name="txtApiKey" Width="300" Height="35" Margin="0,10" Background="LightGray"/>
+
+                    <Button Content="Test Connection" Width="300" Height="40" Margin="10" Background="#4CAF50" Foreground="White" FontWeight="Bold"/>
+                </StackPanel>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>

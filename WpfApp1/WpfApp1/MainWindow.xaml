@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+         <!-- Main Grid Layout -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Content Area -->
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+            <!-- Application Title -->
+            <TextBlock Text="Inventory Management System" FontSize="20" FontWeight="Bold" 
+                       Foreground="#2C3E50" TextAlignment="Center" Margin="0,0,0,20"/>
+
+            <!-- Username Field -->
+            <TextBlock Text="Username" FontSize="14" Foreground="#2C3E50" Margin="0,5,0,5"/>
+            <TextBox x:Name="txtUsername" Height="35" Background="#ECF0F1" BorderThickness="1" BorderBrush="#BDC3C7" 
+                     Margin="0,0,0,10" FontSize="14" Padding="5"/>
+
+            <!-- Password Field -->
+            <TextBlock Text="Password" FontSize="14" Foreground="#2C3E50" Margin="0,5,0,5"/>
+            <PasswordBox x:Name="txtPassword" Height="35" Background="#ECF0F1" BorderThickness="1" BorderBrush="#BDC3C7" 
+                         Margin="0,0,0,20" FontSize="14" Padding="5"/>
+
+            <!-- Login Button -->
+            <Button Content="Login" Width="150" Height="40" Background="#2980B9" Foreground="White" 
+                    FontSize="16" FontWeight="Bold" Margin="0,10,0,0" HorizontalAlignment="Center"
+                    Click="LoginButton_Click"/>
+
+            <!-- Forgot Password Link -->
+            <TextBlock Text="Forgot Password?" FontSize="12" Foreground="#3498DB" TextAlignment="Center" 
+                       Margin="0,15,0,0" Cursor="Hand"/>
+        </StackPanel>
+
+        <!-- Footer -->
+        <TextBlock Text="© 2024 Inventory Management System" Grid.Row="1" FontSize="10" Foreground="#7F8C8D" 
+                   HorizontalAlignment="Center" Margin="0,10,0,10"/>
+    </Grid>
+</Window>
